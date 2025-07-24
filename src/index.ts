@@ -19,19 +19,21 @@ rl.setPrompt(chalk.cyan("ts-tron-cli > "));
 rl.prompt();
 
 rl.on("line", async (line) => {
-  const input = line.trim().toLowerCase();
+  const parts = line.trim().split(/\s+/); // 按一个或多个空格分割
+  const commandName = parts[0].toLowerCase();
+  const args = parts.slice(1);
 
-  if (input === "exit") {
+  if (commandName === "exit") {
     rl.close();
     return;
   }
 
-  if (input === "/help") {
+  if (commandName === "/help") {
     printHelp();
-  } else if (commands.has(input)) {
+  } else if (commands.has(commandName)) {
     try {
-      const command = commands.get(input)!;
-      const result = await command.action(tronWeb);
+      const command = commands.get(commandName)!;
+      const result = await command.action(tronWeb, ...args); // 传递参数
       if (result) {
         log(result);
       }
@@ -39,9 +41,9 @@ rl.on("line", async (line) => {
       log(chalk.red("处理命令时发生错误:", error));
     }
   } else {
-    if (input) {
+    if (commandName) {
       log(
-        chalk.gray(`未知命令: "${line.trim()}". 请输入 /help 查看可用命令。`)
+        chalk.gray(`未知命令: "${commandName}". 请输入 /help 查看可用命令。`)
       );
     }
   }

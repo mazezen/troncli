@@ -4,8 +4,7 @@ import chalk from "chalk";
 
 const log = console.log;
 
-// 获取最新的区块信息
-export async function getblocknumber(tronWeb: TronWeb): Promise<Block | null> {
+export async function getBlockNumber(tronWeb: TronWeb): Promise<Block | null> {
   try {
     const block = await tronWeb.trx.getBlock("latest");
     return block;
@@ -15,8 +14,7 @@ export async function getblocknumber(tronWeb: TronWeb): Promise<Block | null> {
   }
 }
 
-// 获取创世区块信息
-export async function getgenesisblock(tronWeb: TronWeb): Promise<Block | null> {
+export async function getGenesisBlock(tronWeb: TronWeb): Promise<Block | null> {
   try {
     const block = await tronWeb.trx.getBlock("earliest");
     return block;
@@ -26,13 +24,41 @@ export async function getgenesisblock(tronWeb: TronWeb): Promise<Block | null> {
   }
 }
 
-// 获取最新的区块信息
-export async function getnowblock(tronWeb: TronWeb): Promise<Block | null> {
+export async function getNowBlock(tronWeb: TronWeb): Promise<Block | null> {
   try {
     const block = await tronWeb.trx.getBlock("latest");
     return block;
   } catch (error) {
     log(chalk.red("获取创世区块失败:"), error);
+    return null;
+  }
+}
+
+// Query a block infomation by the block height or the block ID
+// blockNumberOrBlockId: blockNumber | blockId | `latest` | `earliest`
+export async function getBlock(
+  tronWeb: TronWeb,
+  blockNumberOrBlockId: string
+): Promise<Block | null> {
+  try {
+    const block = tronWeb.trx.getBlock(blockNumberOrBlockId);
+    return block;
+  } catch (error) {
+    log(chalk.red(`通过区块高度或区块 ID 查询区块信息失败: `), error);
+    return null;
+  }
+}
+
+// Query a block infomation by the block ID
+export async function getBlockByBlockHash(
+  tronWeb: TronWeb,
+  blockID: string
+): Promise<Block | null> {
+  try {
+    const block = tronWeb.trx.getBlockByHash(blockID);
+    return block;
+  } catch (error) {
+    log(chalk.red(`通过区块 ID 查询区块信息失败: `), error);
     return null;
   }
 }

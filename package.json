@@ -13,6 +13,7 @@
     "typescript"
   ],
   "author": "mazezen",
+  "email": "mazezen24@gmail.com",
   "license": "MIT",
   "dependencies": {
     "chalk": "^4.1.0",
