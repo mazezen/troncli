@@ -25,7 +25,7 @@
 ## 安装
 
 ```shell
-npm install -g ts-tron-cli
+npm install -g @mazezen/ts-tron-cli
 ```
 
 
