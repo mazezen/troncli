@@ -2,8 +2,13 @@
   "name": "ts-tron-cli",
   "version": "1.0.0",
   "description": "command cli of tron",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "bin": {
+    "ts-tron-cli": "dist/index.js"
+  },
   "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
