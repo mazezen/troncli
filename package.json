@@ -1,0 +1,29 @@
+{
+  "name": "ts-tron-cli",
+  "version": "1.0.0",
+  "description": "command cli of tron",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tron",
+    "cli",
+    "tron-cli",
+    "typescript"
+  ],
+  "author": "mazezen",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^14.0.0",
+    "figlet": "^1.7.0",
+    "tronweb": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
