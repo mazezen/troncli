@@ -16,11 +16,6 @@
 
 ## 🚀 快速开始
 
-### 环境要求
-
-- [Node.js](https://nodejs.org/) (建议使用 v16 或更高版本)
-- [npm](https://www.npmjs.com/)
-
 ## npm packages 
 
 <a href="https://www.npmjs.com/package/ts-tron-cli" target="_blank">npm package ts-tron-cli</a>
@@ -32,6 +27,40 @@
 ```shell
 npm install -g ts-tron-cli
 ```
+
+
+
+## 设置环境变量
+
+> 可选设置。这三项只有在交易的时候才会用到
+>
+> TRON_PRO_API_KEY
+>
+> TRON_DEFAULT_ADDRESS_BASE58
+>
+> TRON_DEFAULT_ADDRESS_HEX
+
+### Mac && Linux
+
+```shell
+export TRON_FULL_HOST="https://api.trongrid.io"
+export TRON_PRO_API_KEY=""
+export PRIVATE_KEY=""
+export TRON_DEFAULT_ADDRESS_BASE58=""
+export TRON_DEFAULT_ADDRESS_HEX=""
+```
+
+### windows
+
+```shell
+set TRON_FULL_HOST="https://api.trongrid.io"
+set TRON_PRO_API_KEY=""
+set PRIVATE_KEY=""
+set TRON_DEFAULT_ADDRESS_BASE58=""
+set TRON_DEFAULT_ADDRESS_HEX=""
+```
+
+
 
 ## 📖 使用说明
 

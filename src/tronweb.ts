@@ -2,10 +2,8 @@ import { TronWeb } from "tronweb";
 
 export function newTronWeb(): TronWeb {
   const tronweb = new TronWeb({
-    // fullHost: process.env.TRON_FULL_HOST || "https://api.trongrid.io",
-    // headers: { "TRON-PRO-API-KEY": process.env.TRON_PRO_API_KEY || "" },
-    fullHost: "https://api.trongrid.io",
-    headers: { "TRON-PRO-API-KEY": "079f4686-eb4c-4bd0-93d3-51caf9c45fc6" },
+    fullHost: process.env.TRON_FULL_HOST || "https://api.trongrid.io",
+    headers: { "TRON-PRO-API-KEY": process.env.TRON_PRO_API_KEY || "" },
     privateKey: process.env.PRIVATE_KEY || "",
   });
 
