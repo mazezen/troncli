@@ -1,6 +1,6 @@
 {
   "name": "tstroncli",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "command cli of tron",
   "main": "dist/index.js",
   "bin": {
