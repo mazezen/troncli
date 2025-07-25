@@ -1,6 +1,6 @@
-# <center>ts-tron-cli</center>
+# <center>troncli</center>
 
-![](./summery.png)
+![](./summary.png)
 
 一个基于 Node.js 和 TypeScript 构建的，用于与 TRON (波场) 区块链进行交互的命令行工具 (CLI)。
 
@@ -18,12 +18,12 @@
 
 ## npm packages
 
-<a href="https://www.npmjs.com/package/ts-tron-cli" target="_blank">npm package ts-tron-cli</a>
+<a href="https://www.npmjs.com/package/troncli" target="_blank">npm package troncli</a>
 
 ## 安装
 
 ```shell
-npm install -g ts-tron-cli
+npm install -g troncli
 ```
 
 ## 设置环境变量
@@ -124,4 +124,4 @@ set TRON_DEFAULT_ADDRESS_HEX=""
 
 ## 📄 许可证
 
-本项目基于 [MIT](https://github.com/mazezen/ts-tron-cli/blob/main/LICENSE) 许可证。
+本项目基于 [MIT](https://github.com/mazezen/troncli/blob/main/LICENSE) 许可证。

@@ -1,10 +1,10 @@
 {
-  "name": "ts-tron-cli",
-  "version": "1.0.1",
+  "name": "troncli",
+  "version": "0.0.1",
   "description": "command cli of tron",
   "main": "dist/index.js",
   "bin": {
-    "ts-tron-cli": "dist/index.js"
+    "troncli": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -14,7 +14,7 @@
   "keywords": [
     "tron",
     "cli",
-    "tron-cli",
+    "troncli",
     "typescript"
   ],
   "author": "mazezen",

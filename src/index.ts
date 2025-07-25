@@ -16,7 +16,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.setPrompt(chalk.cyan("ts-tron-cli > "));
+rl.setPrompt(chalk.cyan("troncli > "));
 rl.prompt();
 
 rl.on("line", async (line) => {
