@@ -124,4 +124,4 @@ set TRON_DEFAULT_ADDRESS_HEX=""
 
 ## 📄 许可证
 
-本项目基于 [MIT](https://github.com/mazezen/troncli/blob/main/LICENSE) 许可证。
+本项目基于 [MIT](https://github.com/mazezen/troncli/blob/master/LICENSE) 许可证。
