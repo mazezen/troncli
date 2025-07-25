@@ -1,5 +1,7 @@
 # <center>tstroncli</center>
 
+## <a href="https://github.com/mazezen/tstroncli/blob/master/README.md">中文</a> | <a href="https://github.com/mazezen/tstroncli/blob/master/README_en.md">English</a>
+
 ![](./summary.png)
 
 一个基于 Node.js 和 TypeScript 构建的，用于与 TRON (波场) 区块链进行交互的命令行工具 (CLI)。
@@ -31,6 +33,8 @@
 npm install -g tstroncli
 ```
 
+## 启动
+
 ```shell
 tstroncli
 ```
@@ -39,7 +43,7 @@ tstroncli
 
 > 可选设置。这三项只有在交易的时候才会用到
 >
-> TRON_PRO_API_KEY
+> PRIVATE_KEY
 >
 > TRON_DEFAULT_ADDRESS_BASE58
 >
@@ -67,7 +71,7 @@ set TRON_DEFAULT_ADDRESS_HEX=""
 
 ## 📖 使用说明
 
-程序启动后，你可以输入相应的命令并按回车键来执行。
+`tstroncli`程序启动后，你可以输入相应的命令并按回车键来执行。
 
 ### 可用命令
 
