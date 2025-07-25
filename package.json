@@ -1,10 +1,10 @@
 {
-  "name": "troncli",
+  "name": "tstroncli",
   "version": "0.0.2",
   "description": "command cli of tron",
   "main": "dist/index.js",
   "bin": {
-    "troncli": "dist/index.js"
+    "tstroncli": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",
@@ -14,7 +14,7 @@
   "keywords": [
     "tron",
     "cli",
-    "troncli",
+    "tstroncli",
     "typescript"
   ],
   "author": "mazezen",
@@ -22,7 +22,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mazezen/troncli.git"
+    "url": "git+https://github.com/mazezen/tstroncli.git"
   },
   "files": [
     "dist"

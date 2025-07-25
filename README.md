@@ -1,4 +1,4 @@
-# <center>troncli</center>
+# <center>tstroncli</center>
 
 ![](./summary.png)
 
@@ -23,12 +23,16 @@
 
 ## Npm packages
 
-<a href="https://www.npmjs.com/package/troncli" target="_blank">npm package troncli</a>
+<a href="https://www.npmjs.com/package/tstroncli" target="_blank">npm package tstroncli</a>
 
 ## 安装
 
 ```shell
-npm install -g troncli
+npm install -g tstroncli
+```
+
+```shell
+tstroncli
 ```
 
 ## 设置环境变量
