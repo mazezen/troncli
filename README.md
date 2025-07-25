@@ -16,19 +16,15 @@
 
 ## 🚀 快速开始
 
-## npm packages 
+## npm packages
 
 <a href="https://www.npmjs.com/package/ts-tron-cli" target="_blank">npm package ts-tron-cli</a>
-
-
 
 ## 安装
 
 ```shell
-npm install -g @mazezen/ts-tron-cli
+npm install -g ts-tron-cli
 ```
-
-
 
 ## 设置环境变量
 
@@ -59,8 +55,6 @@ set PRIVATE_KEY=""
 set TRON_DEFAULT_ADDRESS_BASE58=""
 set TRON_DEFAULT_ADDRESS_HEX=""
 ```
-
-
 
 ## 📖 使用说明
 
