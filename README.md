@@ -16,7 +16,12 @@
 
 ## 🚀 快速开始
 
-## npm packages
+## 环境依赖
+
+- <a href="https://nodejs.org" target="_blank">Node: 20.18.0</a>
+- <a href="https://www.npmjs.com/" target="_blank">Npm: 10.8.2</a>
+
+## Npm packages
 
 <a href="https://www.npmjs.com/package/troncli" target="_blank">npm package troncli</a>
 

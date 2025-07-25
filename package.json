@@ -20,6 +20,13 @@
   "author": "mazezen",
   "email": "mazezen24@gmail.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazezen/troncli.git"
+  },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^14.0.0",
